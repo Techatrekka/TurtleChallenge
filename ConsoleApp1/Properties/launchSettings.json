@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ConsoleApp1": {
+      "commandName": "Project",
+      "commandLineArgs": "gameSettings\r\nmoves",
+      "workingDirectory": "C:\\Users\\sasly\\Documents\\Turtle Challenge\\ConsoleApp1"
+    }
+  }
+}
