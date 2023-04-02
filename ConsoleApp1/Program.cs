@@ -4,13 +4,11 @@ using System.Text;
 
 static void Main(string[] args)
 {
-    // Display the number of command line arguments.
-    string gameSettings = File.ReadAllText("C:\\Users\\sasly\\Documents\\Turtle Challenge\\ConsoleApp1\\ConsoleApp1\\" + args[0] +".txt");
-    //Console.WriteLine(gameSettings);
-    string moves = File.ReadAllText("C:\\Users\\sasly\\Documents\\Turtle Challenge\\ConsoleApp1\\ConsoleApp1\\"+args[1] + ".txt");
-    //Console.WriteLine(moves);
+    string gameSettings = File.ReadAllText(args[0] +".txt");
+    string moves = File.ReadAllText(args[1] + ".txt");
     string[] playsGameSetting = gameSettings.Split('\n');
     string mines, startEnd;
+    //Game Loop
     for (int i = 0; i < playsGameSetting.Length; i++) {
         mines = playsGameSetting[i].Split('-')[0];
         startEnd = playsGameSetting[i].Split('-')[1];
